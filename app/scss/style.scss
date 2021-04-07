@@ -1,16 +1,46 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-.header{
-    &__inner{
+.header {
+    box-shadow: 0 4px 4px -2px rgb(0, 0, 0,25%);
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        &:focus {
+            outline: none;
+        }
     }
 }
+.logo-link {
+    margin: 0 auto;
+}
+.menu {
+    &__items {
+        display: flex;
+        justify-content: space-between;
 
-
+        padding-left: 10px;
+    }
+    &__item-list {
+        padding-left: 20px;
+        padding-right: 60px;
+    }
+    &__list-link {
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 700;
+        color: $default-color;
+    }
+}
