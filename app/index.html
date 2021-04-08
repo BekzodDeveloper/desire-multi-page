@@ -44,12 +44,14 @@
             </ul>
           </nav>
           <button class="header__btn" href="#">
-            <img src="images/icon_menu.svg" alt="icon menu" class="header__btn-img">
+            <img class="header__btn-img" src="images/icon_menu.svg" alt="icon menu">
           </button>
           <div class="rightside-menu">
-            <button class="rightside-menu__btn">
-              <img class="rightside-menu__btn-close" src="images/close.svg" alt="">
-            </button>
+            <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
+            <label class="rightside-menu__label" for="check">
+              <img class="rightside-menu__btn-close" src="images/close.svg" alt="close">
+              <!-- <button class="rightside-menu__btn"></button> -->
+            </label>
             <div class="rightside-menu__content">
               <img class="rightside-menu__content-logo" src="images/logo-big.png" alt="">
               <h4 class="rightside-menu__content-title">Furniture for life</h4>
@@ -63,7 +65,11 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section>
+        <div class="container"></div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__content">
