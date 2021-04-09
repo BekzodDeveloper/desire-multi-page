@@ -39,15 +39,16 @@
                 <a class="menu__list-link" href="#">Blog</a>
               </li>
               <li class="menu__item-list">
-                <a class="menu__list-link" href="#">Contact</a>
+                <a class="menu__list-link" href="#footer">Contact</a>
               </li>
             </ul>
           </nav>
-          <button class="header__btn" href="#">
+          <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
+          <label class="header__btn" for="check">
             <img class="header__btn-img" src="images/icon_menu.svg" alt="icon menu">
-          </button>
-          <div class="rightside-menu">
-            <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
+          </label>
+          <div id="rightside-menu" class="rightside-menu">
+            <!-- <input class="rightside-menu__input-checkbox" id="check" type="checkbox"> -->
             <label class="rightside-menu__label" for="check">
               <img class="rightside-menu__btn-close" src="images/close.svg" alt="close">
               <!-- <button class="rightside-menu__btn"></button> -->
@@ -56,8 +57,9 @@
               <img class="rightside-menu__content-logo" src="images/logo-big.png" alt="">
               <h4 class="rightside-menu__content-title">Furniture for life</h4>
               <p class="rightside-menu__content-text">
-                Sustainable hot chicken skateboard, dreamcatcher meggings
-                actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi nisi corporis, amet placeat rem,
+                veniam provident sunt dolor ad nihil. Soluta vitae obcaecati mollitia quod provident ea, molestias qui
+                quidem, repellat fuga unde, eligendi repudiandae dolore maxime modi corporis?
               </p>
               <img class="rightside-menu__content-img" src="images/r-s_img.jpg" alt="">
             </div>
@@ -66,12 +68,42 @@
       </div>
     </header>
     <main class="main">
-      <section>
-        <div class="container"></div>
+      <section class="main-top">
+        <div class="container">
+          <div class="main-top__inner">
+
+            <div class="main-top__slides">
+              <div class="main-top__slide fade">
+                <div class="main-top__left">
+                  <div class="main-top__left-bg"></div>
+                  <img class="main-top__left-img" src="images/main__chair.png" style="max-width:703px; width:100%"
+                    alt="slide-img-1">
+                </div>
+                <div class="main-top__right">
+                  <h1 class="main-top__right-title">Furniture collection</h1>
+                  <p class="main-top__right-text">
+                    Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical
+                    drinking vinegar austint
+                  </p>
+                </div>
+
+
+              </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer__content">
         <div class="container">
           <div class="footer__inner">

@@ -23,6 +23,13 @@
             outline: none;
         }
     }
+    #check {
+        display: none;
+    }
+    #check:checked ~ .rightside-menu {
+        right: 0px;
+        // background-color: #000 !important;
+    }
 }
 .logo-link {
     margin: 0 auto;
@@ -44,34 +51,32 @@
         color: $default-color;
     }
 }
+
 .rightside-menu {
     background-color: #fcfcfc;
     position: fixed;
+    display: block;
     top: 0;
-    right: 0px;
+    right: -800px;
     // bottom: 0;
-    max-width: 594px;
+    max-width: 494px;
     width: 100%;
     padding-top: 40px;
     z-index: 100;
     padding-bottom: 100px;
     height: 100%;
+    transition: all 1s;
 
-    &__input-checkbox {
-        display: none;
-    }
     &__btn-close {
         cursor: pointer;
         padding-left: 50px;
         margin-bottom: 30px;
     }
-    // &__btn--active{
 
-    // }
     &__content {
         text-align: center;
         margin: 0 auto;
-        max-width: 483px;
+        max-width: 383px;
     }
     &__content-logo {
         margin: 0 auto;
@@ -104,8 +109,52 @@
     }
     &__content-img {
         margin: 0 auto;
-        max-width: 383px;
+        max-width: 283px;
         width: 100%;
+    }
+}
+
+.main-top {
+    &__left {
+        width: 45%;
+        position: relative;
+    }
+    &__left-bg::before {
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 110px;
+        width: 315px;
+        height: 510px;
+        background-color: rgb(241, 209, 82);
+        z-index: -1;
+    }
+    &__slide {
+        display: flex;
+    }
+
+    &__right {
+        width: 55%;
+
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+    &__right-title {
+        font-size: 100px;
+        @extend %title-font;
+        line-height: 124px;
+        position: relative;
+        margin-bottom: 40px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 187px;
+            height: 1px;
+            background-color: #979797;
+        }
     }
 }
 
