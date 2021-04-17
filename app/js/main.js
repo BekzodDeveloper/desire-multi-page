@@ -30,7 +30,8 @@ $(document).ready(function(){
         autoplay: true,
         prevArrow: false,
         nextArrow: false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        
     });
 });
 
