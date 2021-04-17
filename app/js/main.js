@@ -14,11 +14,13 @@ $('.rightside-menu__btn').on('click', function () {
 // };
 $(document).ready(function(){
     $('.main-content__slides').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 2000,
         slidesToShow: 1,
-        autoplay: true
+        autoplay: true,
+        prevArrow: false,
+        nextArrow: false
     });
 });
 
