@@ -13,7 +13,7 @@ $('.rightside-menu__btn').on('click', function () {
 
 // };
 $(document).ready(function(){
-    $('.main-content__slides').slick({
+    $('.main-content__slider').slick({
         dots: true,
         infinite: true,
         speed: 2000,
@@ -21,6 +21,16 @@ $(document).ready(function(){
         autoplay: true,
         prevArrow: false,
         nextArrow: false
+    });
+    $('.about__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 3,
+        autoplay: true,
+        prevArrow: false,
+        nextArrow: false,
+        focusOnSelect: true
     });
 });
 

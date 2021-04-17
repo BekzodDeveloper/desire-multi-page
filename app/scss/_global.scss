@@ -2,20 +2,16 @@ html,
 body {
 	// height: 100%;
 	scroll-behavior: smooth;
-	
 }
-body{
+body {
 	@extend %default-font;
 	overflow-x: hidden;
 	height: auto;
-
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	
-
 }
 
 .main {
@@ -23,15 +19,15 @@ body{
 }
 .footer {
 	flex: 0 0 auto;
-	
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-
-
-
-
+.container-about {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
