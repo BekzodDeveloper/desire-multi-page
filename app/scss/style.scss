@@ -316,6 +316,86 @@
     }
 }
 
+.how-it-works {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__title {
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    &__steps {
+        display: flex;
+    }
+    &__steps-start {
+        width: 50%;
+        display: flex;
+        height: 450px;
+    }
+    &__step {
+        width: 255px;
+    }
+    .step-bottom {
+        align-self: flex-end;
+        .step-text-last{
+            text-align: right;
+        }
+    }
+    &__step-title {
+        @extend %title-font;
+        position: relative;
+        padding-left: 47px;
+        padding-bottom: 15px;
+    }
+    &__step-title-1 {
+        &::before {
+            content: "";
+            background-image: url(../images/designer-consultation.svg);
+            width: 41px;
+            height: 42px;
+            position: absolute;
+            top: -8px;
+            left: 0;
+        }
+    }
+    &__step-title-2 {
+        &::before {
+            content: "";
+            background-image: url(../images/measurement.svg);
+            width: 38px;
+            height: 26px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+    }
+    &__step-title-3 {
+        &::before {
+            content: "";
+            background-image: url(../images/production.svg);
+            width: 38px;
+            height: 34px;
+            position: absolute;
+            top: -3px;
+            left: 0;
+        }
+    }
+    &__step-title-4 {
+        text-align: right!important;
+        &::before {
+            content: "";
+            background-image: url(../images/delivery.svg);
+            width: 42px;
+            height: 37px;
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+    }
+}
+
 .footer {
     background-color: #dfdfdf;
 
