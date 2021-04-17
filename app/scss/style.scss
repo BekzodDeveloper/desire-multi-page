@@ -248,6 +248,7 @@
     }
     &__image {
         margin: 0 auto;
+        width: 420px;
     }
 
     &__slide-content {
@@ -324,20 +325,37 @@
         font-size: 36px;
         line-height: 51px;
         text-align: center;
-        margin-bottom: 33px;
+        margin-bottom: 40px;
     }
     &__steps {
         display: flex;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 1110px;
+            height: 2px;
+            background-color: #363838;
+
+        }
     }
     &__steps-start {
         width: 50%;
         display: flex;
-        height: 450px;
+        justify-content: space-between;
+        height: 400px;
     }
     &__step {
         width: 255px;
     }
-    .step-bottom {
+    .step-1,
+    .step-3 {
+        align-self: start;
+    }
+    .step-2,
+    .step-4 {
         align-self: flex-end;
         .step-text-last{
             text-align: right;
@@ -392,6 +410,58 @@
             position: absolute;
             top: -10px;
             left: 0;
+        }
+    }
+    .step-1{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #363838;
+            bottom: -23px;
+            left: -2px;
+            border-radius: 100px;
+        }
+    }
+    .step-2{
+        position: relative;
+        // padding-bottom: 48px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: #363838;
+            top: -43px;
+            left: 0px;
+        }
+    }
+    .step-3{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background-color: #363838;
+            bottom: -101px;
+            left: 0px;
+        }
+    }
+    .step-4{
+        position: relative;
+        padding-bottom: 30px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #363838;
+            top: -47px;
+            right: -2px;
+            border-radius: 100px;
         }
     }
 }
