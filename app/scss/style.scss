@@ -115,7 +115,7 @@
 }
 
 .main-content {
-    background-image: url(../images/main-bg.jpg);
+    background-image: url(../images/home/main-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -296,7 +296,7 @@
 }
 
 .call-to-action {
-    background-image: url(../images/call-to-action-bg.jpg);
+    background-image: url(../images/home/call-to-action-bg.jpg);
     background-size: cover;
 
     &__bg-color {
@@ -369,7 +369,7 @@
     &__step-title-1 {
         &::before {
             content: "";
-            background-image: url(../images/designer-consultation.svg);
+            background-image: url(../images/home/designer-consultation.svg);
             width: 41px;
             height: 42px;
             position: absolute;
@@ -380,7 +380,7 @@
     &__step-title-2 {
         &::before {
             content: "";
-            background-image: url(../images/measurement.svg);
+            background-image: url(../images/home/measurement.svg);
             width: 38px;
             height: 26px;
             position: absolute;
@@ -391,7 +391,7 @@
     &__step-title-3 {
         &::before {
             content: "";
-            background-image: url(../images/production.svg);
+            background-image: url(../images/home/production.svg);
             width: 38px;
             height: 34px;
             position: absolute;
@@ -403,7 +403,7 @@
         text-align: right !important;
         &::before {
             content: "";
-            background-image: url(../images/delivery.svg);
+            background-image: url(../images/home/delivery.svg);
             width: 42px;
             height: 37px;
             position: absolute;
@@ -577,7 +577,7 @@
             content: "";
             width: 16px;
             height: 12px;
-            background-image: url(../images/email.svg);
+            background-image: url(../images/home/email.svg);
         }
     }
     &__form {
@@ -624,7 +624,7 @@
             content: "";
             width: 16px;
             height: 16px;
-            background-image: url(../images/facebook.svg);
+            background-image: url(../images/home/facebook.svg);
         }
     }
     &__social-link--instagram {
@@ -635,7 +635,7 @@
             content: "";
             width: 14px;
             height: 14px;
-            background-image: url(../images/instagram.svg);
+            background-image: url(../images/home/instagram.svg);
         }
     }
     &__social-link--pinterest {
@@ -646,7 +646,7 @@
             content: "";
             width: 16px;
             height: 16px;
-            background-image: url(../images/pinterest.svg);
+            background-image: url(../images/home/pinterest.svg);
         }
     }
     &__social-link--whatsapp {
@@ -657,7 +657,7 @@
             content: "";
             width: 14px;
             height: 14px;
-            background-image: url(../images/whatsapp.png);
+            background-image: url(../images/home/whatsapp.png);
         }
     }
     &__social-link--youtube {
@@ -668,7 +668,7 @@
             content: "";
             width: 18px;
             height: 12px;
-            background-image: url(../images/youtube.svg);
+            background-image: url(../images/home/youtube.svg);
         }
     }
 
