@@ -3,6 +3,7 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "about";
 
 .header {
     box-shadow: 0 4px 4px -2px rgba(#000, 0.25);
@@ -112,6 +113,16 @@
         max-width: 283px;
         width: 100%;
     }
+}
+
+.breakpoints{
+    background-color: #DFDFDF;
+    height: 55px;
+    @extend %default-font;
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+
 }
 
 .main-content {
@@ -504,7 +515,7 @@
 }
 
 .blog{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     &__heading{
         @extend %title-font;
         line-height: 51px;
@@ -522,6 +533,7 @@
     &__post{
         margin: 0 15px;
         width: 50%;
+        padding-bottom: 50px;
     }
     &__post-image{
         margin: 0 auto 20px;
@@ -692,3 +704,6 @@
         }
     }
 }
+
+
+

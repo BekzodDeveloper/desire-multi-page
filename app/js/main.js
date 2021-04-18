@@ -25,13 +25,20 @@ $(document).ready(function(){
     $('.about__slider').slick({
         dots: false,
         infinite: true,
-        speed: 2000,
+        speed: 3000,
         slidesToShow: 3,
         autoplay: true,
         prevArrow: false,
-        nextArrow: false,
-        focusOnSelect: true,
-        
+        nextArrow: false
+    });
+    $('.about-gallery__slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 3,
+        autoplay: true,
+        prevArrow: false,
+        nextArrow: false
     });
 });
 
