@@ -1,5 +1,186 @@
-<div class="breakpoints">
-    <div class="container">
-      <span class="breakpoints__text">Home/Gallery</span>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desire</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu">
+            <ul class="menu__items">
+              <li class="menu__item-list">
+                <a class="menu__list-link" href="about.html">About</a>
+              </li>
+              <li class="menu__item-list">
+                <a class="menu__list-link" href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="logo-link" href="index.html">
+            <img src="images/home/logo.png" alt="logo" class="logo-img">
+          </a>
+          <nav class="menu">
+            <ul class="menu__items">
+              <li class="menu__item-list">
+                <a class="menu__list-link" href="blog.html">Blog</a>
+              </li>
+              <li class="menu__item-list">
+                <a class="menu__list-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
+          <label class="header__btn" for="check">
+            <img class="header__btn-img" src="images/home/icon_menu.svg" alt="icon menu">
+          </label>
+          <div id="rightside-menu" class="rightside-menu">
+            <!-- <input class="rightside-menu__input-checkbox" id="check" type="checkbox"> -->
+            <label class="rightside-menu__label" for="check">
+              <img class="rightside-menu__btn-close" src="images/home/close.svg" alt="close">
+              <!-- <button class="rightside-menu__btn"></button> -->
+            </label>
+            <div class="rightside-menu__content">
+              <img class="rightside-menu__content-logo" src="images/home/logo-big.png" alt="">
+              <h4 class="rightside-menu__content-title">Furniture for life</h4>
+              <p class="rightside-menu__content-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi nisi corporis, amet placeat rem,
+                veniam provident sunt dolor ad nihil. Soluta vitae obcaecati mollitia quod provident ea, molestias qui
+                quidem, repellat fuga unde, eligendi repudiandae dolore maxime modi corporis?
+              </p>
+              <img class="rightside-menu__content-img" src="images/home/r-s_img.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="gallery-page">
+        <div class="container-max">
+          <div class="gallery-page__inner">
+
+            <div class="gallery-page__breakpoints">
+              <div class="container">
+                <span class="breakpoints__text">
+                  <a href="index.html">Home</a> / <a href="gallery.html">Gallery</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="gallery-page__filter">
+              <button class="gallery-page__filter-btn">Bedroom furniture</button>
+              <button class="gallery-page__filter-btn">Living room furniture</button>
+              <button class="gallery-page__filter-btn">Office furniture</button>
+              <button class="gallery-page__filter-btn">Dining room futniture</button>
+              <button class="gallery-page__filter-btn">Chair</button>
+            </div>
+
+            <div class="gallery-page__images-1">
+              <div class="gallery-page__left-1">
+                <img class="gallery-page__left-image-1" src="./images/home/gallery-img-1.jpg" alt="gallery img">
+              </div>
+              <div class="gallery-page__right-1">
+                <img class="gallery-page__right-image-1" src="./images/home/gallery-img-2.jpg" alt="gallery img">
+                <img class="gallery-page__right-image-1" src="./images/home/gallery-img-3.jpg" alt="gallery img">
+                <img class="gallery-page__right-image-1" src="./images/home/gallery-img-4.jpg" alt="gallery img">
+                <img class="gallery-page__right-image-1" src="./images/home/gallery-img-5.jpg" alt="gallery img">
+              </div>
+            </div>
+            
+            <div class="gallery-page__images-2">
+              
+              <div class="gallery-page__left-2">
+            <img class="gallery-page__left-image-2" src="./images/home/gallery-img-2.jpg" alt="gallery img">
+              <img class="gallery-page__left-image-2" src="./images/home/gallery-img-3.jpg" alt="gallery img">
+                <img class="gallery-page__left-image-2" src="./images/home/gallery-img-4.jpg" alt="gallery img">
+                <img class="gallery-page__left-image-2" src="./images/home/gallery-img-5.jpg" alt="gallery img">
+              </div>
+
+              <div class="gallery-page__right-2">
+                <img class="gallery-page__right-image-2" src="./images/home/gallery-img-1.jpg" alt="gallery img">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <h6 class="footer__info-title">Contact Us</h6>
+              <p class="footer__info-text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you
+                probably
+                occupy</p>
+              <a class="footer__info-email" href="mainto:bkzd18kholdarov@gmail.com"
+                target="_blank">ouremailaddress@email.com</a>
+              <div class="footer__form">
+                <input class="footer__form-input" type="text" placeholder="Subscribe by email">
+                <button class="footer__form-btn" type="submit">Send</button>
+              </div>
+            </div>
+
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__social-link footer__social-link--facebook "
+                    href="#">Facebook</a></li>
+                <li class="footer__social-item"><a class="footer__social-link footer__social-link--instagram "
+                    href="#">Instagram</a></li>
+                <li class="footer__social-item"><a class="footer__social-link footer__social-link--pinterest "
+                    href="#">Pinterest</a></li>
+                <li class="footer__social-item"><a class="footer__social-link footer__social-link--whatsapp "
+                    href="#">WhatsApp</a></li>
+                <li class="footer__social-item"><a class="footer__social-link footer__social-link--youtube "
+                    href="#">Youtube</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__menu">
+              <ul class="footer__menu-items">
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Delivery</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQ</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">Help</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link" href="#">More About Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          674 Gonzales Drive. Washington, PA 15301
+        </p>
+      </div>
+    </footer>
   </div>
+
+
+
+  <script src="js/main.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+
+</body>
+
+</html>
