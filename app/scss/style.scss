@@ -54,7 +54,9 @@
 }
 
 .rightside-menu {
-    background-color: #fcfcfc;
+    box-shadow: 0 4px 4px -2px rgba(#000, 0.95);
+
+    background-color: #fff;
     position: fixed;
     display: block;
     top: 0;
@@ -115,14 +117,13 @@
     }
 }
 
-.breakpoints{
-    background-color: #DFDFDF;
+.breakpoints {
+    background-color: #dfdfdf;
     height: 55px;
     @extend %default-font;
     font-size: 14px;
     padding-top: 13px;
     padding-bottom: 14px;
-
 }
 
 .main-content {
@@ -130,18 +131,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    height: 607px;
     z-index: -10;
-    padding-bottom: 100px;
-    &__bottom-line {
-        position: absolute;
-        width: 100%;
-        height: 196px;
-        bottom: 0;
-        right: 0;
-        background-color: #fff;
-        z-index: -5;
-        // position: relative;
-    }
+    margin-bottom: 80px;
+
     &__left {
         width: 45%;
         position: relative;
@@ -217,12 +210,16 @@
 }
 
 .about {
-    padding-bottom: 100px;
+    &__inner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
     &__content {
         text-align: center;
         margin: 0 auto;
         width: 730px;
+        margin-top: 40px;
         margin-bottom: 24px;
     }
     &__title {
@@ -485,7 +482,7 @@
     &__filter-btn {
         background-color: transparent;
         outline: none;
-        border-color: #8f8d8d;
+        border: 1px solid #8f8d8d;
         border-radius: 100px;
         color: #8f8d8d;
         font-weight: 600;
@@ -493,7 +490,7 @@
         cursor: pointer;
         transition: 0.6s;
         &:hover {
-            border-color: transparent;
+            border: 1px solid rgba(255, 238, 51, 0.5);
             color: $title-color;
             background-color: rgba(255, 238, 51, 0.5);
         }
@@ -514,9 +511,9 @@
     }
 }
 
-.blog{
+.blog {
     padding-bottom: 50px;
-    &__heading{
+    &__heading {
         @extend %title-font;
         line-height: 51px;
         font-size: 36px;
@@ -526,30 +523,29 @@
         margin: 0 auto;
         padding-bottom: 30px;
     }
-    &__posts{
+    &__posts {
         display: flex;
         justify-content: space-between;
     }
-    &__post{
+    &__post {
         margin: 0 15px;
         width: 50%;
         padding-bottom: 50px;
     }
-    &__post-image{
+    &__post-image {
         margin: 0 auto 20px;
         width: 100%;
     }
-    &__post-category{
+    &__post-category {
         margin-bottom: 10px;
         font-size: 14px;
         color: #707070;
     }
-    &__post-text{
+    &__post-text {
         @extend %title-font;
         color: $title-color;
         font-size: 24px;
         line-height: 38px;
-
     }
 }
 
@@ -704,6 +700,3 @@
         }
     }
 }
-
-
-
