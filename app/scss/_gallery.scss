@@ -1,18 +1,7 @@
 .gallery-page {
     padding-bottom: 88px;
 
-    &__breakpoints {
-        background-color: #dfdfdf;
-        padding-top: 13px;
-        padding-bottom: 14px;
-        .breakpoints__text {
-            color: $default-color;
-
-            a {
-                color: $default-color;
-            }
-        }
-    }
+    
 
     &__filter {
         text-align: center;
@@ -45,13 +34,11 @@
         grid-gap: 30px;
 
         margin-bottom: 30px;
-
     }
     &__left-image-1 {
         max-width: 100%;
         width: 100%;
         align-items: stretch;
-
     }
     &__right-1 {
         display: grid;
@@ -81,7 +68,6 @@
         grid-gap: 30px;
         align-items: stretch;
         justify-items: stretch;
-
     }
     &__left-image-1 {
         width: 100%;

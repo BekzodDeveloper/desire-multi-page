@@ -5,6 +5,8 @@
 @import "global";
 @import "about";
 @import "gallery";
+@import "blog";
+@import "contact";
 
 
 .header {
@@ -119,13 +121,16 @@
     }
 }
 
-.breakpoints {
+.gallery-page__breakpoints,
+.blog-page__breakpoints {
     background-color: #dfdfdf;
-    height: 55px;
-    @extend %default-font;
-    font-size: 14px;
     padding-top: 13px;
     padding-bottom: 14px;
+    .breakpoints__text,
+    .breakpoints__text a {
+        color: $default-color;
+        font-size: 14px;
+    }
 }
 
 .main-content {
@@ -515,7 +520,7 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
-    &__right-image{
+    &__right-image {
         width: 100%;
     }
 }
@@ -568,7 +573,7 @@
         padding-bottom: 80px;
     }
     &__info {
-        max-width: 540px;
+        width: 540px;
     }
     &__info-title {
         line-height: 23px;
@@ -578,6 +583,7 @@
     &__info-text {
         margin-bottom: 16px;
         color: $default-color;
+        max-width: 476px;
     }
     &__info-email {
         color: $title-color;
@@ -618,6 +624,9 @@
         color: #fffff0;
         background-color: $title-color;
         margin-left: 9px;
+        cursor: pointer;
+        width: 50%;
+        border: none;
         &:focus {
             outline: none;
         }

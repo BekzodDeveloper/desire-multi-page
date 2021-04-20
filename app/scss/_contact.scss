@@ -1,0 +1,19 @@
+.contact-page{
+    position: relative;
+    padding-top: 100px;
+    background-color: green;
+    &__breakpoints {
+        background-color: rgba(222, 222, 222, 0.6);
+        position: absolute;
+        top: 0;
+        padding-top: 12px;
+        padding-bottom: 14px;
+        width: 100%;
+        .breakpoints__text a,
+        .breakpoints__text {
+            @extend %default-font;
+            font-size: 14px;
+            color: $default-color;
+        }
+    }
+}

@@ -12,7 +12,7 @@ $('.rightside-menu__btn').on('click', function () {
 //     })
 
 // };
-$(document).ready(function(){
+$(document).ready(function () {
     $('.main-content__slider').slick({
         dots: true,
         infinite: true,
@@ -20,25 +20,52 @@ $(document).ready(function(){
         slidesToShow: 1,
         autoplay: true,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        draggable: false
+
     });
     $('.about__slider').slick({
         dots: false,
         infinite: true,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 3,
         autoplay: true,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        draggable: false
+
     });
     $('.about-gallery__slider').slick({
         dots: false,
         infinite: true,
-        speed: 3000,
+        speed: 1000,
         slidesToShow: 3,
         autoplay: true,
         prevArrow: false,
-        nextArrow: false
+        nextArrow: false,
+        draggable: false
+
     });
+    $('.blog-page__post-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        autoplay: true,
+        arrows:true,
+        draggable: false
+        // prevArrow: false,
+        // nextArrow: false
+    });
+});
+
+/*video overlay play button
+.blog-page__post-slider
+*/
+
+$('#play-video').on('click', function (e) {
+    var $video = $('#video');
+    src = $video.attr('src');
+    $video.attr('src', src + '?autoplay=1');
 });
 
