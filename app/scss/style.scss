@@ -8,7 +8,6 @@
 @import "blog";
 @import "contact";
 
-
 .header {
     box-shadow: 0 4px 4px -2px rgba(#000, 0.25);
 
@@ -54,6 +53,40 @@
         font-family: "Montserrat Alternates", sans-serif;
         font-weight: 700;
         color: $default-color;
+        border-bottom: 2px solid transparent;
+        // transition: 2s;
+        padding-bottom: 4px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            border-radius: 16px;
+            width: 0px;
+            height: 2px;
+            background-color: #5a5a5a;
+            bottom: 0;
+            left: 50%;
+            right: 50%;
+            transition: .6s;
+
+        }
+
+        &:hover::after {
+            position: absolute;
+            content: "";
+            border-radius: 16px;
+            width: 100%;
+            height: 2px;
+            background-color: $default-color;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            transition: .6s;
+
+            // border-bottom: 2px solid $default-color;
+        }
     }
 }
 
@@ -614,6 +647,7 @@
         background-color: transparent;
         &:focus {
             outline: none;
+            box-shadow: 0 0 2pt 1pt #363838;
         }
     }
     &__form-btn {
@@ -629,6 +663,7 @@
         border: none;
         &:focus {
             outline: none;
+            box-shadow: 0 0 2pt 2pt #a1a1a1;
         }
     }
     &__social-item {

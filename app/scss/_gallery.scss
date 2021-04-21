@@ -1,8 +1,6 @@
 .gallery-page {
     padding-bottom: 88px;
 
-    
-
     &__filter {
         text-align: center;
         padding-top: 80px;
@@ -19,6 +17,11 @@
         cursor: pointer;
         transition: 0.6s;
         margin: 0 12px;
+        &:focus {
+            border: 1px solid rgba(255, 238, 51, 0.5);
+            color: $title-color;
+            background-color: rgba(255, 238, 51, 0.5);
+        }
 
         &:hover {
             border: 1px solid rgba(255, 238, 51, 0.5);
@@ -39,6 +42,12 @@
         max-width: 100%;
         width: 100%;
         align-items: stretch;
+        transition: all 0.6s;
+        box-shadow: 0 0 7pt 3pt rgba(144, 142, 142, 0.5);
+
+        &:hover {
+            box-shadow: 0 0 2pt 2pt #8f8d8d;
+        }
     }
     &__right-1 {
         display: grid;
@@ -48,6 +57,12 @@
     }
     &__right-image-1 {
         width: 100%;
+        box-shadow: 0 0 7pt 3pt rgba(144, 142, 142, 0.5);
+        transition: all 0.6s;
+
+        &:hover {
+            box-shadow: 0 0 2pt 2pt #8f8d8d;
+        }
     }
 
     &__images-2 {
@@ -60,6 +75,12 @@
     &__right-image-2 {
         max-width: 100%;
         width: 100%;
+        transition: all 0.6s;
+        box-shadow: 0 0 7pt 3pt rgba(144, 142, 142, 0.5);
+
+        &:hover {
+            box-shadow: 0 0 2pt 2pt #8f8d8d;
+        }
     }
     &__left-2 {
         display: grid;
@@ -69,7 +90,13 @@
         align-items: stretch;
         justify-items: stretch;
     }
-    &__left-image-1 {
+    &__left-image-2 {
         width: 100%;
+        transition: all 0.6s;
+        box-shadow: 0 0 7pt 3pt rgba(144, 142, 142, 0.5);
+
+        &:hover {
+            box-shadow: 0 0 2pt 2pt #8f8d8d;
+        }
     }
 }
