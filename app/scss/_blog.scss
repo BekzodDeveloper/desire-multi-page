@@ -1,7 +1,7 @@
 .blog-page {
     &__inner {
         padding-top: 10px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         display: flex;
     }
     &__content {
@@ -9,6 +9,7 @@
     }
     &__post {
         margin-top: 50px;
+        margin-bottom: 70px;
     }
     &__post-img {
         width: 100%;
@@ -27,10 +28,54 @@
         font-size: 24px;
         line-height: 38px;
         padding-bottom: 6px;
+        color: $title-color;
+
+        &-authentic {
+            padding-bottom: 25px;
+        }
+        &--link {
+            @extend %title-font;
+            font-size: 24px;
+            line-height: 38px;
+            padding-bottom: 6px;
+            color: $title-color;
+        }
     }
     &__post-text {
         color: $default-color;
+        padding-bottom: 50px;
     }
+    &__quote-inner {
+        padding: 54px 65px;
+        background-color: rgba(222, 222, 222, 0.5);
+        text-align: center;
+    }
+    &__quote-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 38px;
+        font-style: italic;
+        position: relative;
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 2px;
+            background-color: #6d7278;
+            border-radius: 16px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__quote-author {
+        @extend %title-font;
+        line-height: 22px;
+        color: $default-color;
+    }
+
     &__post-img {
         outline: none;
     }
@@ -121,7 +166,7 @@
         outline-style: none;
         &:focus {
             border-radius: 16px;
-            box-shadow: 0 0 0pt 1pt #8F8D8D;
+            box-shadow: 0 0 0pt 1pt #8f8d8d;
         }
     }
     &__categories-title {
@@ -148,52 +193,269 @@
         line-height: 23px;
         padding-bottom: 24px;
         color: $title-color;
-
     }
     &__recent-posts-item {
         padding-bottom: 10px;
     }
-    &__recent-posts-link{
+    &__recent-posts-link {
         color: $default-color;
-
     }
     &__recent-posts-category {
         color: #a1a1a1;
     }
-
-    &__tags-title{
+    &__tags-title {
         @extend %title-font;
         font-size: 16px;
         line-height: 23px;
         padding-bottom: 4px;
         color: $title-color;
     }
-    &__tags-list{
+    &__tags-list {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-    &__tags-item{
+    &__tags-item {
         margin-top: 10px;
         margin-right: 5px;
     }
 
-    &__tags-btn{
+    &__tags-btn {
         background-color: transparent;
         font-weight: 600;
         font-size: 14px;
-        color: #8F8D8D;
+        color: #8f8d8d;
         padding: 0 16px;
         border-radius: 16px;
-        border: 1px solid #8F8D8D;
+        border: 1px solid #8f8d8d;
         outline-style: none;
+        box-shadow: 0 0 4pt 1pt rgba(143, 141, 141, 0.5);
+
         &:focus {
-            box-shadow: 0 0 0pt 1pt #8F8D8D;
+            box-shadow: 0 0 0pt 1pt rgba(143, 141, 141, 0.5);
         }
     }
 
-    &__item{
+    &__item {
         display: inline-block;
         margin-right: 10px;
+    }
+}
+
+.post-page {
+    &__inner {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        display: flex;
+    }
+    &__content {
+        width: 65%;
+    }
+    &__post {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    &__post-img {
+        width: 100%;
+    }
+    &__post-desc {
+        margin-top: 25px;
+    }
+    &__post-category {
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+        padding-bottom: 10px;
+    }
+    &__post-title {
+        @extend %title-font;
+        font-size: 24px;
+        line-height: 38px;
+        padding-bottom: 6px;
+        color: $title-color;
+
+        &--link {
+            @extend %title-font;
+            font-size: 24px;
+            line-height: 38px;
+            padding-bottom: 6px;
+            color: $title-color;
+        }
+    }
+    &__post-text {
+        color: $default-color;
+    }
+
+    &__quote-inner {
+        margin: 40px 0px 30px;
+        padding: 0 40px;
+        text-align: left;
+    }
+    &__quote-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 38px;
+        font-style: italic;
+        position: relative;
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 2px;
+            background-color: #6d7278;
+            border-radius: 16px;
+            bottom: 0;
+            left: 0;
+            // transform: translateX(-50%);
+        }
+    }
+    &__quote-author {
+        @extend %title-font;
+        line-height: 22px;
+        color: $default-color;
+    }
+
+    &__tags {
+        margin-bottom: 40px;
+    }
+    &__tags-title {
+        @extend %title-font;
+        font-size: 20px;
+        line-height: 31px;
+    }
+    &__tags-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__tags-item {
+        margin-top: 10px;
+        margin-right: 23px;
+    }
+    &__tags-btn {
+        padding: 0 16px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #8f8d8d;
+        background-color: transparent;
+        border: 1px solid #8f8d8d;
+        border-radius: 16px;
+        outline-style: none;
+        box-shadow: 0 0 4pt 2pt rgba(143, 141, 141, 0.5);
+
+        &:focus {
+            box-shadow: 0 0 0pt 1pt rgba(143, 141, 141, 0.5);
+        }
+    }
+
+    &__prev-next-posts__inner {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 40px;
+        padding-bottom: 32px;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        margin-bottom: 35px;
+    }
+
+    &__prev-next-posts__prev-post {
+        width: 276px;
+        text-align: left;
+        padding-left: 33px;
+        position: relative;
+    }
+    &__prev-next-posts__prev-post--link {
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url(../images/blog/prev.svg);
+            width: 12px;
+            height: 23px;
+            top: 17px;
+            left: 0;
+        }
+    }
+
+    &__prev-next-posts__next-post {
+        width: 276px;
+        text-align: right;
+        padding-right: 33px;
+        position: relative;
+    }
+
+    &__prev-next-posts__next-post--link {
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(../images/blog/next.svg);
+            width: 12px;
+            height: 23px;
+            top: 17px;
+            right: 0;
+        }
+    }
+
+    &__comment {
+        position: relative;
+    }
+
+    &__comment-avatar {
+        position: absolute;
+        border-radius: 60px;
+    }
+
+    &__comment-title {
+        @extend %title-font;
+        font-size: 20px;
+        line-height: 31px;
+        color: $title-color;
+        margin-bottom: 10px;
+    }
+
+    &__comment-inner {
+        padding-left: 77px;
+        padding-bottom: 40px;
+    }
+    &__comment-info {
+        display: flex;
+    }
+
+    &__comment-info--name {
+        @extend %title-font;
+        line-height: 23px;
+        color: $title-color;
+        padding-top: 3px;
+        width: 100%;
+    }
+    &__comment-info--reply-link {
+        font-weight: 600;
+        font-size: 14px;
+        color: #707070;
+    }
+    &__comment-date {
+        font-size: 14px;
+        color: #a1a1a1;
+        padding-bottom: 10px;
+    }
+    &__comment-text {
+        color: $default-color;
+    }
+    &__post-comment__input-text{
+        width: 100%;
+    }
+
+    &__post-comment__input-name{
+        width: 45%;
+    }
+    &__post-comment__input-email{
+        width: 45%;
     }
 }
