@@ -52,10 +52,22 @@ $(document).ready(function () {
         speed: 1000,
         slidesToShow: 1,
         autoplay: true,
-        arrows:true,
+        arrows: true,
         draggable: false
         // prevArrow: false,
         // nextArrow: false
+    });
+    $('.contact-page-gallery__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 2000,
+        slidesToShow: 6,
+        slidesToScroll: 4,
+        autoplay: true,
+        prevArrow: false,
+        nextArrow: false,
+        draggable: false
+
     });
 });
 

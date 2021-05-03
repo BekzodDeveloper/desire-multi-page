@@ -648,23 +648,26 @@
         background-color: transparent;
         &:focus {
             outline: none;
-            box-shadow: 0 0 2pt 1pt #363838;
+            // box-shadow: 0 0 2pt 1pt #363838;
+            box-shadow: 0 0 2pt 2pt #a1a1a18e;
+
         }
     }
     &__form-btn {
         border-radius: 21px;
         font-weight: 600;
         padding: 6px 12px;
-        width: 160px;
+        // width: 160px;
         color: #fffff0;
         background-color: $title-color;
         margin-left: 9px;
         cursor: pointer;
-        width: 50%;
+        width: 45%;
         border: none;
         &:focus {
             outline: none;
-            box-shadow: 0 0 2pt 2pt #a1a1a1;
+            box-shadow: 0 0 2pt 2pt #a1a1a18e;
+
         }
     }
     &__social-item {
