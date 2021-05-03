@@ -210,11 +210,22 @@
                             </div>
 
                             <div class="post-page__post-comment">
-                                <p class="post-page__post-comment__title"></p>
+                                <p class="post-page__post-comment__title">Post a Comment</p>
                                 <div class="post-page__post-comment__form">
-                                    <input class="post-page__post-comment__input-text" type="text" placeholder="Your comment">
-                                    <input class="post-page__post-comment__input-name" type="name" placeholder="Your name">
-                                    <input class="post-page__post-comment__input-email" type="email" placeholder="Your email">
+                                    <div class="post-page__post-comment__input">
+                                        <textarea class="post-page__post-comment__input-text" type="text" placeholder="Your comment" ></textarea>
+                                        <div class="post-page__post-comment__inputs">
+                                            <input class="post-page__post-comment__input-name" type="name" placeholder="Your name">
+                                            <input class="post-page__post-comment__input-email" type="email" placeholder="Your email">
+                                        </div>
+                                    </div>
+                                    <div class="post-page__post-comment__checkbox-wrapper">
+                                        <input class="post-page__post-comment__checkbox" type="checkbox" name=""
+                                        id="remember-me">
+                                    </div>
+                                    
+                                    <label class="post-page__post-comment__checkbox-text" for="remember-me">Remember me</label>
+                                    <button class="post-page__post-comment__btn" type="submit">Submit</button>
                                 </div>
                             </div>
 

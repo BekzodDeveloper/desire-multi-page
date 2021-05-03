@@ -148,8 +148,14 @@
         border-radius: 100px;
         outline-style: none;
         font-size: 14px;
-        color: #a1a1a1;
         border: 1px solid #a1a1a1;
+        &:focus {
+            box-shadow: 0 0 0pt 1px #a1a1a1;
+        }
+        color: $default-color;
+        &::placeholder {
+            color: #a1a1a1;
+        }
     }
     &__input-container {
         position: relative;
@@ -166,7 +172,7 @@
         outline-style: none;
         &:focus {
             border-radius: 16px;
-            box-shadow: 0 0 0pt 1pt #8f8d8d;
+            box-shadow: 0 0 0pt 1px #8f8d8d;
         }
     }
     &__categories-title {
@@ -229,7 +235,7 @@
         border-radius: 16px;
         border: 1px solid #8f8d8d;
         outline-style: none;
-        box-shadow: 0 0 4pt 1pt rgba(143, 141, 141, 0.5);
+        box-shadow: 0 0 0pt 0pt rgba(143, 141, 141, 0.5);
 
         &:focus {
             box-shadow: 0 0 0pt 1pt rgba(143, 141, 141, 0.5);
@@ -342,7 +348,7 @@
         border: 1px solid #8f8d8d;
         border-radius: 16px;
         outline-style: none;
-        box-shadow: 0 0 4pt 2pt rgba(143, 141, 141, 0.5);
+        box-shadow: 0 0 0pt 0pt rgba(143, 141, 141, 0.5);
 
         &:focus {
             box-shadow: 0 0 0pt 1pt rgba(143, 141, 141, 0.5);
@@ -448,14 +454,109 @@
     &__comment-text {
         color: $default-color;
     }
-    &__post-comment__input-text{
-        width: 100%;
+
+    &__post-comment {
+        margin-bottom: 100px;
     }
 
-    &__post-comment__input-name{
-        width: 45%;
+    &__post-comment__title {
+        @extend %title-font;
+        color: $title-color;
+        line-height: 23px;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
-    &__post-comment__input-email{
-        width: 45%;
+
+    &__post-comment__inputs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+
+    &__post-comment__input-text {
+        width: 100%;
+        border-radius: 24px;
+        padding: 14px 15px;
+        height: 125px;
+        border: 1px solid #dfdfdf;
+        resize: none;
+        margin-bottom: 12px;
+
+        outline-style: none;
+        &:focus {
+            box-shadow: 0 0 0px 1px #8f8d8d91;
+        }
+        color: $default-color;
+        &::placeholder {
+            color: #a1a1a1;
+        }
+    }
+
+    &__post-comment__input-name {
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid #dfdfdf;
+        padding: 6px 15px;
+        margin-right: 5px;
+
+        outline-style: none;
+        &:focus {
+            box-shadow: 0 0 0px 1px #8f8d8d91;
+        }
+        color: $default-color;
+        &::placeholder {
+            color: #a1a1a1;
+        }
+    }
+    &__post-comment__input-email {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+        border: 1px solid #dfdfdf;
+        padding: 6px 15px;
+        margin-left: 5px;
+
+        outline-style: none;
+        &:focus {
+            box-shadow: 0 0 0px 1px #8f8d8d91;
+        }
+        color: $default-color;
+        &::placeholder {
+            color: #a1a1a1;
+        }
+    }
+
+    &__post-comment__checkbox-wrapper {
+        position: relative;
+    }
+    &__post-comment__checkbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 21px;
+        height: 21px;
+        border: none;
+        // outline: 1px solid #979797;
+        border-color: transparent;
+        // appearance: none;
+    }
+    &__post-comment__checkbox-text {
+        font-size: 14px;
+        color: #a1a1a1;
+        margin-bottom: 5px;
+        padding-left: 30px;
+    }
+    &__post-comment__btn {
+        display: block;
+        margin-top: 19px;
+        font-weight: 600;
+        color: #fffff0;
+        padding: 6px 12px;
+        background-color: $title-color;
+        width: 160px;
+        height: 40px;
+        border-radius: 21px;
+        border:none;
+        cursor: pointer;
     }
 }
