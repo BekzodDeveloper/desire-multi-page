@@ -10,13 +10,13 @@
 
 .header {
     box-shadow: 0 4px 4px -2px rgba(#000, 0.25);
-
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 45px;
         padding-bottom: 45px;
+        position: relative;
     }
     &__btn {
         background-color: transparent;
@@ -27,12 +27,8 @@
             outline: none;
         }
     }
-    #check {
+    &__btn-menu {
         display: none;
-    }
-    #check:checked ~ .rightside-menu {
-        right: 0px;
-        // background-color: #000 !important;
     }
 }
 .logo-link {
@@ -58,7 +54,7 @@
         padding-bottom: 4px;
         position: relative;
 
-        &::after{
+        &::after {
             position: absolute;
             content: "";
             border-radius: 16px;
@@ -68,8 +64,7 @@
             bottom: 0;
             left: 50%;
             right: 50%;
-            transition: .6s;
-
+            transition: 0.6s;
         }
 
         &:hover::after {
@@ -83,7 +78,7 @@
             left: 0;
             right: 0;
 
-            transition: .6s;
+            transition: 0.6s;
 
             // border-bottom: 2px solid $default-color;
         }
@@ -94,28 +89,35 @@
     box-shadow: 0 4px 4px -2px rgba(#000, 0.95);
 
     background-color: #fff;
-    position: fixed;
+    // position: absolute;
     display: block;
-    top: 0;
-    right: -800px;
-    // bottom: 0;
-    max-width: 494px;
+    max-width: 100%;
     width: 100%;
     padding-top: 40px;
     z-index: 100;
     padding-bottom: 100px;
     height: 100%;
     transition: all 1s;
+    position: fixed;
+    top: 0;
+    transform: translateX(50%);
+
+    &--close {
+        transition: all 1s;
+        transform: translateX(2000px);
+    }
 
     &__btn-close {
         cursor: pointer;
-        padding-left: 50px;
+        margin-left: 50px;
         margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
     }
 
     &__content {
         text-align: center;
-        margin: 0 auto;
+        margin: 0 40px;
         max-width: 383px;
     }
     &__content-logo {
@@ -650,7 +652,6 @@
             outline: none;
             // box-shadow: 0 0 2pt 1pt #363838;
             box-shadow: 0 0 2pt 2pt #a1a1a18e;
-
         }
     }
     &__form-btn {
@@ -667,7 +668,6 @@
         &:focus {
             outline: none;
             box-shadow: 0 0 2pt 2pt #a1a1a18e;
-
         }
     }
     &__social-item {
@@ -757,3 +757,5 @@
         }
     }
 }
+
+@import "media";

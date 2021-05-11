@@ -2,6 +2,24 @@ $('.rightside-menu__btn').on('click', function () {
     console.log('Hello!');
 })
 
+
+$(function () {
+    $('.header__btn').on('click', function () {
+        $('.rightside-menu').removeClass('rightside-menu--close');
+    });
+    $('.rightside-menu__btn-close').on('click', function () {
+        $('.rightside-menu').addClass('rightside-menu--close');
+    });
+
+
+    $('.header__btn-menu').on('click', function () {
+        $('.menu').toggleClass('menu--open');
+    });
+});
+
+
+
+
 // function initSlider(){
 //     $('.main-content__slides').slick({
 //         dots: false,
