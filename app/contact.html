@@ -22,8 +22,8 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <nav class="menu">
-            <ul class="menu__items">
+          <nav class="menu ">
+            <ul class="menu__items menu__items--1">
               <li class="menu__item-list">
                 <a class="menu__list-link" href="about.html">About</a>
               </li>
@@ -32,10 +32,10 @@
               </li>
             </ul>
           </nav>
-          <a class="logo-link" href="index.html">
+          <a class="logo" href="index.html">
             <img src="images/home/logo.png" alt="logo" class="logo-img">
           </a>
-          <nav class="menu">
+          <nav class="menu ">
             <ul class="menu__items">
               <li class="menu__item-list">
                 <a class="menu__list-link" href="blog.html">Blog</a>
@@ -45,16 +45,21 @@
               </li>
             </ul>
           </nav>
-          <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
-          <label class="header__btn" for="check">
+          <button class="header__btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <button class="header__btn">
             <img class="header__btn-img" src="images/home/icon_menu.svg" alt="icon menu">
-          </label>
-          <div id="rightside-menu" class="rightside-menu">
-            <!-- <input class="rightside-menu__input-checkbox" id="check" type="checkbox"> -->
-            <label class="rightside-menu__label" for="check">
-              <img class="rightside-menu__btn-close" src="images/home/close.svg" alt="close">
-              <!-- <button class="rightside-menu__btn"></button> -->
-            </label>
+          </button>
+
+          <div id="rightside-menu" class="rightside-menu rightside-menu--close">
+
+            <button class="rightside-menu__btn-close">
+              <img class="rightside-menu__btn-icon" src="images/home/close.svg" alt="close">
+            </button>
             <div class="rightside-menu__content">
               <img class="rightside-menu__content-logo" src="images/home/logo-big.png" alt="">
               <h4 class="rightside-menu__content-title">Furniture for life</h4>

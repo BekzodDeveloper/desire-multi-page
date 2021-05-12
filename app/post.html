@@ -22,8 +22,8 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <nav class="menu">
-                        <ul class="menu__items">
+                    <nav class="menu ">
+                        <ul class="menu__items menu__items--1">
                             <li class="menu__item-list">
                                 <a class="menu__list-link" href="about.html">About</a>
                             </li>
@@ -32,10 +32,10 @@
                             </li>
                         </ul>
                     </nav>
-                    <a class="logo-link" href="index.html">
+                    <a class="logo" href="index.html">
                         <img src="images/home/logo.png" alt="logo" class="logo-img">
                     </a>
-                    <nav class="menu">
+                    <nav class="menu ">
                         <ul class="menu__items">
                             <li class="menu__item-list">
                                 <a class="menu__list-link" href="blog.html">Blog</a>
@@ -45,27 +45,33 @@
                             </li>
                         </ul>
                     </nav>
-                    <input class="rightside-menu__input-checkbox" id="check" type="checkbox">
-                    <label class="header__btn" for="check">
+                    <button class="header__btn-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <button class="header__btn">
                         <img class="header__btn-img" src="images/home/icon_menu.svg" alt="icon menu">
-                    </label>
-                    <div id="rightside-menu" class="rightside-menu">
-                        <!-- <input class="rightside-menu__input-checkbox" id="check" type="checkbox"> -->
-                        <label class="rightside-menu__label" for="check">
-                            <img class="rightside-menu__btn-close" src="images/home/close.svg" alt="close">
-                            <!-- <button class="rightside-menu__btn"></button> -->
-                        </label>
+                    </button>
+
+                    <div id="rightside-menu" class="rightside-menu rightside-menu--close">
+
+                        <button class="rightside-menu__btn-close">
+                            <img class="rightside-menu__btn-icon" src="images/home/close.svg" alt="close">
+                        </button>
                         <div class="rightside-menu__content">
-                            <img class="rightside-menu__logo" src="images/home/logo-big.png" alt="">
-                            <h4 class="rightside-menu__title">Furniture for life</h4>
-                            <p class="rightside-menu__text">
+                            <img class="rightside-menu__content-logo" src="images/home/logo-big.png" alt="">
+                            <h4 class="rightside-menu__content-title">Furniture for life</h4>
+                            <p class="rightside-menu__content-text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi nisi corporis, amet
-                                placeat rem,
+                                placeat
+                                rem,
                                 veniam provident sunt dolor ad nihil. Soluta vitae obcaecati mollitia quod provident ea,
                                 molestias qui
                                 quidem, repellat fuga unde, eligendi repudiandae dolore maxime modi corporis?
                             </p>
-                            <img class="rightside-menu__img" src="images/home/r-s_img.jpg" alt="">
+                            <img class="rightside-menu__content-img" src="images/home/r-s_img.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -213,18 +219,22 @@
                                 <p class="post-page__post-comment__title">Post a Comment</p>
                                 <div class="post-page__post-comment__form">
                                     <div class="post-page__post-comment__input">
-                                        <textarea class="post-page__post-comment__input-text" type="text" placeholder="Your comment" ></textarea>
+                                        <textarea class="post-page__post-comment__input-text" type="text"
+                                            placeholder="Your comment"></textarea>
                                         <div class="post-page__post-comment__inputs">
-                                            <input class="post-page__post-comment__input-name" type="name" placeholder="Your name">
-                                            <input class="post-page__post-comment__input-email" type="email" placeholder="Your email">
+                                            <input class="post-page__post-comment__input-name" type="name"
+                                                placeholder="Your name">
+                                            <input class="post-page__post-comment__input-email" type="email"
+                                                placeholder="Your email">
                                         </div>
                                     </div>
                                     <div class="post-page__post-comment__checkbox-wrapper">
                                         <input class="post-page__post-comment__checkbox" type="checkbox" name=""
-                                        id="remember-me">
+                                            id="remember-me">
                                     </div>
-                                    
-                                    <label class="post-page__post-comment__checkbox-text" for="remember-me">Remember me</label>
+
+                                    <label class="post-page__post-comment__checkbox-text" for="remember-me">Remember
+                                        me</label>
                                     <button class="post-page__post-comment__btn" type="submit">Submit</button>
                                 </div>
                             </div>
