@@ -3,13 +3,13 @@
     background-size: cover;
     margin-bottom: 129px;
     position: relative;
-    &__breakpoints {
+    &__breadcrumbs {
         position: absolute;
         top: 0;
         padding-top: 12px;
         padding-bottom: 14px;
-        .breakpoints__text a,
-        .breakpoints__text {
+        .breadcrumbs__text a,
+        .breadcrumbs__text {
             @extend %default-font;
             font-size: 14px;
             color: $default-color;
@@ -55,7 +55,8 @@
         }
     }
     &__texts {
-        width: 825px;
+        width: 100%;
+        max-width: 825px;
         color: $default-color;
         align-self: flex-end;
     }
@@ -97,8 +98,9 @@
     }
     &__images {
         padding: 0 10px;
-        // width: 100%;
-        max-width: 100%;
+        width: 100%;
+        max-width: 303px;
+        min-width: 100px;
     }
 }
 
@@ -109,13 +111,15 @@
     &__slide {
         position: relative;
         outline: none;
+        margin: 0 10px;
         &:hover .about-gallery__slide-content {
             opacity: 0.6;
         }
     }
     &__image {
         margin: 0 auto;
-        width: 420px;
+        width: 100%;
+        max-width: 420px;
     }
 
     &__slide-content {
@@ -179,7 +183,6 @@
             bottom: 0;
             z-index: -1;
         }
-
     }
     &__inner {
         display: flex;

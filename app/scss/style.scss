@@ -161,14 +161,14 @@
     }
 }
 
-.gallery-page__breakpoints,
-.blog-page__breakpoints,
-.post-page__breakpoints {
+.gallery-page__breadcrumbs,
+.blog-page__breadcrumbs,
+.post-page__breadcrumbs {
     background-color: #dfdfdf;
     padding-top: 13px;
     padding-bottom: 14px;
-    .breakpoints__text,
-    .breakpoints__text a {
+    .breadcrumbs__text,
+    .breadcrumbs__text a {
         color: $default-color;
         font-size: 14px;
     }
@@ -387,6 +387,7 @@
         line-height: 51px;
         text-align: center;
         margin-bottom: 40px;
+        color: $title-color;
     }
     &__steps {
         display: flex;

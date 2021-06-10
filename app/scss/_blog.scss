@@ -142,6 +142,9 @@
     margin-top: 50px;
     width: 35%;
     margin-left: 30px;
+    &__input-container {
+        display: none;
+    }
     &__input-search {
         width: 100%;
         padding: 6px 0 6px 18px;
@@ -161,6 +164,7 @@
         position: relative;
         width: 100%;
     }
+
     &__search-btn {
         border: none;
         background-color: transparent;
@@ -556,7 +560,7 @@
         width: 160px;
         height: 40px;
         border-radius: 21px;
-        border:none;
+        border: none;
         cursor: pointer;
     }
 }
